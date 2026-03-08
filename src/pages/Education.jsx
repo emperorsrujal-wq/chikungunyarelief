@@ -116,36 +116,44 @@ const Education = () => {
                             </p>
 
                             <h2 id="treatment-and-medicine" className="flex items-center gap-2" style={{ fontSize: '2.25rem', marginTop: '3rem', marginBottom: '1rem', scrollMarginTop: '100px' }}>
-                                <Pill color="var(--color-primary)" /> 4. Chikungunya Treatment & Ayurvedic Medicine
+                                <Pill color="var(--color-primary)" /> 4. Chikungunya Virus Treatment & Medicine
                             </h2>
                             <p>
-                                While there is currently no direct anti-viral <strong>chikungunya cure</strong>, modern and traditional systems offer various ways to treat it. The primary goal of <strong>chikungunya treatment</strong> is symptom management.
+                                While there is currently no direct anti-viral <strong>chikungunya cure</strong>, modern and traditional systems offer various ways to treat it. The primary goal of <strong>treatment of chikungunya fever</strong> is symptom management. If you are looking for the exact <strong>chikungunya medicine name</strong>, you must first decide between traditional and alternative therapies.
                             </p>
 
                             <h3 style={{ fontSize: '1.5rem', marginTop: '1.5rem', marginBottom: '0.5rem' }}>Allopathic Medicine for Chikungunya</h3>
                             <p>
-                                Conventional <em>treatment for chikungunya</em> relies on NSAIDs (like Ibuprofen) to manage fever and inflammation. However, finding the absolute <em>best tablet for chikungunya</em> or <em>chikungunya fever medicine</em> in allopathy can be frustrating because these drugs often fail to cure the underlying lingering post-viral inflammation.
+                                Conventional <em>treatment for chikungunya</em> relies on NSAIDs to manage fever and inflammation. However, finding the absolute <em>best tablet for chikungunya</em> or a standard <em>chikungunya fever medicine</em> in allopathy can be frustrating because these drugs often fail to cure the underlying lingering post-viral inflammation. Standard <strong>chikungunya pain relief tablets</strong> only offer temporary masking.
                             </p>
 
-                            <h3 style={{ fontSize: '1.5rem', marginTop: '1.5rem', marginBottom: '0.5rem' }}>Ayurveda for Chikungunya</h3>
+                            <h3 style={{ fontSize: '1.5rem', marginTop: '1.5rem', marginBottom: '0.5rem' }}>Chikungunya in Ayurveda</h3>
                             <p>
-                                Because chronic pain can last for years, many turn to the <strong>best ayurvedic medicine for chikungunya</strong>. The holistic approach of <em>ayurvedic treatment for chikungunya</em> focuses on detoxifying the blood and reducing systemic inflammation.
+                                Because chronic pain can last for years, many turn to the <strong>best ayurvedic medicine for chikungunya</strong>. The holistic approach of <em>ayurvedic treatment for chikungunya</em> focuses on detoxifying the blood and reducing systemic inflammation. When searching for reliable <strong>medicine for joint pain after chikungunya</strong>, Ayurveda is often the answer.
                             </p>
                             <p>
-                                The <strong>ayurvedic medicine for chikungunya joint pain</strong> heavily features ingredients like:
+                                The best <strong>ayurvedic medicine for chikungunya joint pain</strong> heavily features ingredients like:
                             </p>
                             <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 <li><strong>Turmeric & Ginger:</strong> Powerful anti-inflammatories found in any good <em>ayurvedic tablet for chikungunya</em>.</li>
-                                <li><strong>Boswellia & Fenugreek:</strong> Act as natural painkillers and are often hailed as the <em>best medicine for chikungunya joint pain</em>.</li>
-                                <li><strong>Harde & Neem:</strong> Used in traditional <em>chikungunya ayurveda</em> to cleanse the body of viral residuals.</li>
+                                <li><strong>Boswellia & Fenugreek:</strong> Act as natural painkillers and are universally hailed as the <em>best medicine for chikungunya joint pain</em>.</li>
+                                <li><strong>Harde & Neem:</strong> Essential <em>chikungunya medicine in ayurveda</em> used to cleanse the body of viral residuals.</li>
                             </ul>
+
+                            <h3 style={{ fontSize: '1.5rem', marginTop: '1.5rem', marginBottom: '0.5rem' }}>Homeopathy, Unani, and Patanjali Options</h3>
                             <p>
-                                Note: Some patients also explore <strong>chikungunya homeopathic medicine</strong> or <em>chikungunya homeopathy remedies</em>, though clinical formulations containing standardized Ayurvedic extracts remain the most reliably studied natural interventions.
+                                Beyond Ayurveda, patients frequently seek alternative <strong>medicine on chikungunya</strong>:
                             </p>
+                            <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                <li><strong>Homeopathy:</strong> People often search for the <em>best homeopathic medicine for chikungunya</em>. Common <em>chikungunya homeopathy remedies</em> include Rhus Tox and Eupatorium Perfoliatum for the "bone-breaking" pain. <em>Chikungunya ka homeopathic treatment</em> focuses on "like cures like".</li>
+                                <li><strong>Unani:</strong> Traditional <strong>unani medicine for chikungunya</strong> utilizes herbs like Khamira Marwareed to strengthen the heart and reduce joint fevers.</li>
+                                <li><strong>Patanjali:</strong> For those seeking commercial Ayurvedic blends, finding a specific <strong>patanjali medicine for joint pain after chikungunya</strong> (like Giloy Ghanvati or Peedantak Vati) is a popular route for a <em>chikungunya patanjali medicine</em> solution.</li>
+                            </ul>
+                            <p>Regardless of whether you choose an <em>ayurvedic remedy for chikungunya</em> or a <strong>chikungunya rash medicine</strong>, supporting your body with high-quality, standardized herbal extracts remains the most proven path to recovery.</p>
 
                             <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: '#ecfdf5', borderRadius: '1rem', textAlign: 'center', border: '2px solid var(--color-primary)' }}>
                                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#065f46' }}>Looking for the Best Tablet for Chikungunya Pain?</h3>
-                                <p style={{ marginBottom: '1.5rem', color: '#047857' }}>We combined the 8 most powerful Ayurvedic herbs into one clinically formulated daily supplement to defeat post-viral arthritis.</p>
+                                <p style={{ marginBottom: '1.5rem', color: '#047857' }}>We combined the 8 most powerful Ayurvedic herbs into one clinically formulated <strong>chikungunya treatment medicine</strong> to defeat post-viral arthritis.</p>
                                 <a href="/product" className="btn btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.1rem', boxShadow: '0 4px 14px 0 rgba(16, 185, 129, 0.39)' }}>
                                     View Our Ayurvedic Joint Relief Formula
                                 </a>

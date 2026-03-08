@@ -16,10 +16,10 @@ const Product = () => {
                         <ShieldCheck size={16} /> 100% Secure Checkout
                     </div>
                     <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', marginBottom: '1rem', maxWidth: '800px' }}>
-                        The Scientifically Proven Formula for <span style={{ color: 'var(--color-primary)' }}>Chikungunya Joint Relief</span>
+                        The Best <span style={{ color: 'var(--color-primary)' }}>Ayurvedic Medicine for Chikungunya</span>
                     </h1>
                     <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '600px', marginBottom: '2rem' }}>
-                        Don't let post-viral arthritis control your life. Rebuild cartilage and soothe inflammation naturally.
+                        Don't rely on temporary allopathic medicine for chikungunya or simple pain relief tablets. Rebuild cartilage and soothe inflammation naturally with our proven ayurvedic treatment.
                     </p>
                     <div className="flex gap-4 mb-8" style={{ color: '#f59e0b' }}>
                         <Star fill="#f59e0b" /> <Star fill="#f59e0b" /> <Star fill="#f59e0b" /> <Star fill="#f59e0b" /> <Star fill="#f59e0b" />
