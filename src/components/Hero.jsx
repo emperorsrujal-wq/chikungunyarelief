@@ -2,56 +2,56 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Activity } from 'lucide-react';
 
 const Hero = () => {
-    return (
-        <section className="hero-section text-center">
-            <div className="container flex flex-col items-center">
+  return (
+    <section className="hero-section text-center">
+      <div className="container flex flex-col items-center">
 
-                {/* Trust Badge / Eyebrow */}
-                <div className="hero-badge flex items-center gap-2 mb-4">
-                    <ShieldCheck size={16} color="var(--color-primary)" />
-                    <span>100% Natural • Fast Relief • Clinically Studied Ingredients</span>
-                </div>
+        {/* Trust Badge / Eyebrow */}
+        <div className="hero-badge flex items-center gap-2 mb-4">
+          <ShieldCheck size={16} color="var(--color-primary)" />
+          <span>100% Natural • Fast Relief • Clinically Studied Ingredients</span>
+        </div>
 
-                {/* Main Headline */}
-                <h1 className="hero-title">
-                    Relieve Post-Viral <br />
-                    <span style={{ color: 'var(--color-primary)' }}>Joint Pain</span> Naturally
-                </h1>
+        {/* Main Headline */}
+        <h1 className="hero-title">
+          The Best Ayurvedic Medicine for <br />
+          <span style={{ color: 'var(--color-primary)' }}>Chikungunya Joint Pain</span>
+        </h1>
 
-                {/* Subheadline */}
-                <p className="hero-subtitle">
-                    Struggling with lingering immobility and arthritis after Chikungunya? Our specialized formula targets viral-induced inflammation so you can reclaim your active life.
-                </p>
+        {/* Subheadline */}
+        <p className="hero-subtitle">
+          Struggling with lingering body pain after chikungunya? Our 100% natural chikungunya treatment medicine targets viral-induced inflammation so you can reclaim your active life.
+        </p>
 
-                {/* Call to Actions */}
-                <div className="flex gap-4" style={{ marginTop: '2rem' }}>
-                    <Link to="/product" className="btn btn-primary btn-lg flex items-center gap-2">
-                        Get Relief Today <ArrowRight size={20} />
-                    </Link>
-                    <Link to="/education" className="btn btn-outline btn-lg flex items-center gap-2">
-                        <Activity size={20} /> Learn How It Works
-                    </Link>
-                </div>
+        {/* Call to Actions */}
+        <div className="flex gap-4" style={{ marginTop: '2rem' }}>
+          <Link to="/product" className="btn btn-primary btn-lg flex items-center gap-2">
+            Get Relief Today <ArrowRight size={20} />
+          </Link>
+          <Link to="/education" className="btn btn-outline btn-lg flex items-center gap-2">
+            <Activity size={20} /> Learn How It Works
+          </Link>
+        </div>
 
-                {/* Social Proof / Numbers under CTA */}
-                <div className="hero-stats flex gap-8">
-                    <div className="stat-item text-center">
-                        <h3 style={{ fontSize: '2rem', color: 'var(--color-primary)', margin: 0 }}>10k+</h3>
-                        <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Patients Relieved</span>
-                    </div>
-                    <div className="stat-item text-center">
-                        <h3 style={{ fontSize: '2rem', color: 'var(--color-primary)', margin: 0 }}>4.8/5</h3>
-                        <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Average Rating</span>
-                    </div>
-                    <div className="stat-item text-center">
-                        <div className="flex justify-center" style={{ color: '#f59e0b', fontSize: '1.5rem', marginTop: '0.5rem', marginBottom: '0.2rem' }}>★★★★★</div>
-                        <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Verified Reviews</span>
-                    </div>
-                </div>
+        {/* Social Proof / Numbers under CTA */}
+        <div className="hero-stats flex gap-8">
+          <div className="stat-item text-center">
+            <h3 style={{ fontSize: '2rem', color: 'var(--color-primary)', margin: 0 }}>10k+</h3>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Patients Relieved</span>
+          </div>
+          <div className="stat-item text-center">
+            <h3 style={{ fontSize: '2rem', color: 'var(--color-primary)', margin: 0 }}>4.8/5</h3>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Average Rating</span>
+          </div>
+          <div className="stat-item text-center">
+            <div className="flex justify-center" style={{ color: '#f59e0b', fontSize: '1.5rem', marginTop: '0.5rem', marginBottom: '0.2rem' }}>★★★★★</div>
+            <span style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>Verified Reviews</span>
+          </div>
+        </div>
 
-            </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .hero-section {
           padding: 6rem 0;
           background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
@@ -118,8 +118,8 @@ const Hero = () => {
           .btn-lg { width: 100%; }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Hero;

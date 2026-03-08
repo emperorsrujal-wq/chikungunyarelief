@@ -1,96 +1,96 @@
 import { Check, ShoppingCart, Star } from 'lucide-react';
 
 const ProductCard = () => {
-    return (
-        <section className="section" style={{ backgroundColor: '#f8fafc' }} id="shop">
-            <div className="container">
-                <div className="text-center mb-12">
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Get Relief Today</h2>
-                    <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', margin: '0 auto' }}>
-                        Choose the package that's right for you. All orders include free shipping and a 60-day money-back guarantee.
-                    </p>
-                </div>
+  return (
+    <section className="section" style={{ backgroundColor: '#f8fafc' }} id="shop">
+      <div className="container">
+        <div className="text-center mb-12">
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Get the Best Tablet for Chikungunya</h2>
+          <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', margin: '0 auto' }}>
+            Choose the ayurvedic package that's right for you. The most trusted medicine for chikungunya joint pain. All orders include free shipping and a 60-day guarantee.
+          </p>
+        </div>
 
-                <div className="pricing-grid">
+        <div className="pricing-grid">
 
-                    {/* 1 Bottle Package */}
-                    <div className="card pricing-card text-center">
-                        <h3 className="package-title">Starter Package</h3>
-                        <p className="package-subtitle">1 Bottle (30 Day Supply)</p>
-                        <div className="price-tag">
-                            <span className="currency">$</span>
-                            <span className="amount">49</span>
-                            <span className="period">/bottle</span>
-                        </div>
-                        <ul className="benefits-list text-left">
-                            <li><Check size={18} color="var(--color-primary)" /> Basic joint support</li>
-                            <li><Check size={18} color="var(--color-primary)" /> Standard shipping</li>
-                            <li className="disabled"><Check size={18} color="#cbd5e1" /> Free bonus materials</li>
-                        </ul>
-                        <button className="btn btn-outline w-full flex items-center justify-center gap-2">
-                            <ShoppingCart size={18} /> Add to Cart
-                        </button>
-                    </div>
-
-                    {/* 3 Bottle Package (Popular) */}
-                    <div className="card pricing-card popular text-center">
-                        <div className="popular-badge">Most Popular • Save $30</div>
-                        <h3 className="package-title">Recovery Package</h3>
-                        <p className="package-subtitle">3 Bottles (90 Day Supply)</p>
-                        <div className="price-tag">
-                            <span className="currency">$</span>
-                            <span className="amount">39</span>
-                            <span className="period">/bottle</span>
-                        </div>
-                        <p style={{ textDecoration: 'line-through', color: '#94a3b8', fontSize: '0.9rem', marginBottom: '1rem' }}>Total: $147</p>
-                        <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '1.5rem' }}>Total: $117</p>
-
-                        <ul className="benefits-list text-left">
-                            <li><Check size={18} color="var(--color-primary)" /> Deep inflammation relief</li>
-                            <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
-                            <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
-                        </ul>
-                        <button className="btn btn-accent w-full flex items-center justify-center gap-2" style={{ padding: '1rem', fontSize: '1.1rem' }}>
-                            <ShoppingCart size={20} /> Add to Cart
-                        </button>
-                    </div>
-
-                    {/* 6 Bottle Package */}
-                    <div className="card pricing-card text-center">
-                        <div className="save-badge">Save $120</div>
-                        <h3 className="package-title">Long-Term Relief</h3>
-                        <p className="package-subtitle">6 Bottles (180 Day Supply)</p>
-                        <div className="price-tag">
-                            <span className="currency">$</span>
-                            <span className="amount">29</span>
-                            <span className="period">/bottle</span>
-                        </div>
-                        <ul className="benefits-list text-left">
-                            <li><Check size={18} color="var(--color-primary)" /> Complete cartilage repair</li>
-                            <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
-                            <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
-                        </ul>
-                        <button className="btn btn-outline w-full flex items-center justify-center gap-2">
-                            <ShoppingCart size={18} /> Add to Cart
-                        </button>
-                    </div>
-
-                </div>
-
-                {/* Guarantee Banner */}
-                <div className="guarantee-banner text-center mt-12">
-                    <div className="flex justify-center items-center gap-2 mb-2">
-                        <Star fill="#f59e0b" color="#f59e0b" size={24} />
-                        <h4 style={{ fontSize: '1.25rem', margin: 0 }}>60-Day Ironclad Guarantee</h4>
-                        <Star fill="#f59e0b" color="#f59e0b" size={24} />
-                    </div>
-                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem' }}>
-                        If you don't experience a noticeable reduction in joint stiffness and pain within 60 days, we'll refund every penny. No questions asked.
-                    </p>
-                </div>
+          {/* 1 Bottle Package */}
+          <div className="card pricing-card text-center">
+            <h3 className="package-title">Starter Package</h3>
+            <p className="package-subtitle">1 Bottle (30 Day Supply)</p>
+            <div className="price-tag">
+              <span className="currency">$</span>
+              <span className="amount">49</span>
+              <span className="period">/bottle</span>
             </div>
+            <ul className="benefits-list text-left">
+              <li><Check size={18} color="var(--color-primary)" /> Basic joint support</li>
+              <li><Check size={18} color="var(--color-primary)" /> Standard shipping</li>
+              <li className="disabled"><Check size={18} color="#cbd5e1" /> Free bonus materials</li>
+            </ul>
+            <button className="btn btn-outline w-full flex items-center justify-center gap-2">
+              <ShoppingCart size={18} /> Add to Cart
+            </button>
+          </div>
 
-            <style>{`
+          {/* 3 Bottle Package (Popular) */}
+          <div className="card pricing-card popular text-center">
+            <div className="popular-badge">Most Popular • Save $30</div>
+            <h3 className="package-title">Recovery Package</h3>
+            <p className="package-subtitle">3 Bottles (90 Day Supply)</p>
+            <div className="price-tag">
+              <span className="currency">$</span>
+              <span className="amount">39</span>
+              <span className="period">/bottle</span>
+            </div>
+            <p style={{ textDecoration: 'line-through', color: '#94a3b8', fontSize: '0.9rem', marginBottom: '1rem' }}>Total: $147</p>
+            <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '1.5rem' }}>Total: $117</p>
+
+            <ul className="benefits-list text-left">
+              <li><Check size={18} color="var(--color-primary)" /> Deep inflammation relief</li>
+              <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
+              <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
+            </ul>
+            <button className="btn btn-accent w-full flex items-center justify-center gap-2" style={{ padding: '1rem', fontSize: '1.1rem' }}>
+              <ShoppingCart size={20} /> Add to Cart
+            </button>
+          </div>
+
+          {/* 6 Bottle Package */}
+          <div className="card pricing-card text-center">
+            <div className="save-badge">Save $120</div>
+            <h3 className="package-title">Long-Term Relief</h3>
+            <p className="package-subtitle">6 Bottles (180 Day Supply)</p>
+            <div className="price-tag">
+              <span className="currency">$</span>
+              <span className="amount">29</span>
+              <span className="period">/bottle</span>
+            </div>
+            <ul className="benefits-list text-left">
+              <li><Check size={18} color="var(--color-primary)" /> Complete cartilage repair</li>
+              <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
+              <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
+            </ul>
+            <button className="btn btn-outline w-full flex items-center justify-center gap-2">
+              <ShoppingCart size={18} /> Add to Cart
+            </button>
+          </div>
+
+        </div>
+
+        {/* Guarantee Banner */}
+        <div className="guarantee-banner text-center mt-12">
+          <div className="flex justify-center items-center gap-2 mb-2">
+            <Star fill="#f59e0b" color="#f59e0b" size={24} />
+            <h4 style={{ fontSize: '1.25rem', margin: 0 }}>60-Day Ironclad Guarantee</h4>
+            <Star fill="#f59e0b" color="#f59e0b" size={24} />
+          </div>
+          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem' }}>
+            If you don't experience a noticeable reduction in joint stiffness and pain within 60 days, we'll refund every penny. No questions asked.
+          </p>
+        </div>
+      </div>
+
+      <style>{`
         .pricing-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -220,8 +220,8 @@ const ProductCard = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default ProductCard;
