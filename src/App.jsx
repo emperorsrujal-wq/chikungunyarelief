@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from 'react';
 
 // Components
@@ -21,27 +22,29 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="app-container flex flex-col min-h-screen">
-        <Navbar />
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="app-container flex flex-col min-h-screen">
+          <Navbar />
 
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/education" element={<Education />} />
-          </Routes>
-        </main>
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/education" element={<Education />} />
+            </Routes>
+          </main>
 
-        <Footer />
-      </div>
+          <Footer />
+        </div>
 
-      <style>{`
-        .min-h-screen { min-height: 100vh; }
-        .flex-grow { flex-grow: 1; }
-      `}</style>
-    </Router>
+        <style>{`
+          .min-h-screen { min-height: 100vh; }
+          .flex-grow { flex-grow: 1; }
+        `}</style>
+      </Router>
+    </HelmetProvider>
   );
 }
 
