@@ -20,10 +20,10 @@ const SEO = ({ title, description, schema }) => {
         basePath = basePath.slice(0, -1);
     }
 
-    const canonicalUrl = `${DOMAIN}${currentPath === '/' ? '' : currentPath} `;
+    const canonicalUrl = `${DOMAIN}${currentPath === '/' ? '' : currentPath}`;
 
     // Ensure properly formatted URLs for hreflang links
-    const urlIn = `${DOMAIN} /in${basePath === '/' ? '' : basePath}`;
+    const urlIn = `${DOMAIN}/in${basePath === '/' ? '' : basePath}`;
     const urlUs = `${DOMAIN}/us${basePath === '/' ? '' : basePath}`;
     const urlGlobal = `${DOMAIN}${basePath === '/' ? '' : basePath}`;
 

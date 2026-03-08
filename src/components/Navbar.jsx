@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Activity, ShoppingCart, Info, Home } from 'lucide-react';
 import { useLocale } from '../context/LocaleContext';
+import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
   const location = useLocation();
   const { locale, isGlobal } = useLocale();
+  const { cartCount, setIsCartOpen } = useCart();
 
   // Create the prefix (e.g., '/in' or '') to keep users in their current locale
   const prefix = isGlobal ? '' : `/${locale}`;
@@ -32,9 +34,18 @@ const Navbar = () => {
           <Link to={`${prefix}/education`} className={`nav-link flex items-center gap-2 ${isActive('/education')}`}>
             <Info size={18} /> Education Hub
           </Link>
-          <Link to={`${prefix}/product`} className="btn btn-primary flex items-center gap-2">
-            <ShoppingCart size={18} /> Shop Now
-          </Link>
+
+          <button
+            onClick={() => setIsCartOpen(true)}
+            className="btn btn-primary flex items-center gap-2 relative"
+          >
+            <ShoppingCart size={18} /> Cart
+            {cartCount > 0 && (
+              <span className="cart-badge absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </button>
         </nav>
       </div>
 

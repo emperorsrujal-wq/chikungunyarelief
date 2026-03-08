@@ -1,8 +1,10 @@
 import { Check, ShoppingCart, Star } from 'lucide-react';
 import { useLocale } from '../context/LocaleContext';
+import { useCart } from '../context/CartContext';
 
 const ProductCard = () => {
   const { currency, isIndia } = useLocale();
+  const { addToCart } = useCart();
 
   // Dynamic pricing based on region
   const pricingData = {
@@ -19,6 +21,12 @@ const ProductCard = () => {
       price: isIndia ? '2,499' : '29',
       savings: isIndia ? '6,000' : '120',
     }
+  };
+
+  const products = {
+    starter: { id: 'starter', name: "Starter Package", description: "1 Bottle (30 Day Supply)", priceIn: 3499, priceUs: 49 },
+    recovery: { id: 'recovery', name: "Recovery Package", description: "3 Bottles (90 Day Supply)", priceIn: 2999, priceUs: 39 },
+    longTerm: { id: 'longterm', name: "Long-Term Relief", description: "6 Bottles (180 Day Supply)", priceIn: 2499, priceUs: 29 }
   };
 
   return (
@@ -47,7 +55,10 @@ const ProductCard = () => {
               <li><Check size={18} color="var(--color-primary)" /> Standard shipping</li>
               <li className="disabled"><Check size={18} color="#cbd5e1" /> Free bonus materials</li>
             </ul>
-            <button className="btn btn-outline w-full flex items-center justify-center gap-2">
+            <button
+              onClick={() => addToCart(products.starter)}
+              className="btn btn-outline w-full flex items-center justify-center gap-2"
+            >
               <ShoppingCart size={18} /> Add to Cart
             </button>
           </div>
@@ -70,7 +81,10 @@ const ProductCard = () => {
               <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
               <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
             </ul>
-            <button className="btn btn-accent w-full flex items-center justify-center gap-2" style={{ padding: '1rem', fontSize: '1.1rem' }}>
+            <button
+              onClick={() => addToCart(products.recovery)}
+              className="btn btn-accent w-full flex items-center justify-center gap-2" style={{ padding: '1rem', fontSize: '1.1rem' }}
+            >
               <ShoppingCart size={20} /> Add to Cart
             </button>
           </div>
@@ -90,7 +104,10 @@ const ProductCard = () => {
               <li><Check size={18} color="var(--color-primary)" /> Free express shipping</li>
               <li><Check size={18} color="var(--color-primary)" /> 2 Free Health eBooks</li>
             </ul>
-            <button className="btn btn-outline w-full flex items-center justify-center gap-2">
+            <button
+              onClick={() => addToCart(products.longTerm)}
+              className="btn btn-outline w-full flex items-center justify-center gap-2"
+            >
               <ShoppingCart size={18} /> Add to Cart
             </button>
           </div>
