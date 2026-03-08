@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Education from './pages/Education';
+import NotFound from './pages/NotFound';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -33,6 +34,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/product" element={<Product />} />
               <Route path="/education" element={<Education />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
 

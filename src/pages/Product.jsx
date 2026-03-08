@@ -1,15 +1,16 @@
 import TrustBadges from '../components/TrustBadges';
 import ProductCard from '../components/ProductCard';
 import { Star, ShieldCheck, CheckCircle } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const Product = () => {
     return (
         <div className="product-page">
-            <Helmet>
-                <title>Buy Chikungunya Relief Supplement | Stop Post-Viral Arthritis</title>
-                <meta name="description" content="Get fast relief from chronic Chikungunya joint pain. Our 100% natural formula rebuilds cartilage and stops inflammation. Secure checkout & 60-day guarantee." />
-            </Helmet>
+            <SEO
+                title="Buy Chikungunya Relief Supplement | Stop Post-Viral Arthritis"
+                description="Get fast relief from chronic Chikungunya joint pain. Our 100% natural formula rebuilds cartilage and stops inflammation. Secure checkout & 60-day guarantee."
+                path="/product"
+            />
             <section className="section bg-white" style={{ paddingBottom: '2rem' }}>
                 <div className="container flex flex-col items-center text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#ecfdf5', color: '#047857' }}>

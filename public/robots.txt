@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of internal or staging paths if added later
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://chikungunyarelief.com/sitemap.xml

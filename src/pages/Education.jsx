@@ -1,5 +1,5 @@
 import { AlertTriangle, Clock, Activity, FileText, Bug, ShieldPlus, Stethoscope, Pill } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const Education = () => {
     // FAQ Schema for Rich Snippets in Google Search
@@ -36,13 +36,12 @@ const Education = () => {
 
     return (
         <div className="education-hub section bg-white">
-            <Helmet>
-                <title>Chikungunya Virus: Symptoms, Treatment, Causes & Prevention</title>
-                <meta name="description" content="A comprehensive guide covering everything about chikungunya: causes, symptoms, rash, diagnosis, prevention, and the best ayurvedic medicine for chikungunya joint pain." />
-                <script type="application/ld+json">
-                    {JSON.stringify(faqSchema)}
-                </script>
-            </Helmet>
+            <SEO
+                title="Chikungunya Virus: Symptoms, Treatment, Causes & Prevention"
+                description="A comprehensive guide covering everything about chikungunya: causes, symptoms, rash, diagnosis, prevention, and the best ayurvedic medicine for chikungunya joint pain."
+                path="/education"
+                schema={faqSchema}
+            />
 
             <div className="container">
                 <div className="text-center mb-16">
