@@ -12,6 +12,8 @@ import Product from './pages/Product';
 import Education from './pages/Education';
 import NotFound from './pages/NotFound';
 
+import { LocaleProvider } from './context/LocaleContext';
+
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -21,30 +23,53 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Extracted routes to reuse across different locales
+const GlobalRoutes = () => (
+  <>
+    <Route index element={<Home />} />
+    <Route path="product" element={<Product />} />
+    <Route path="education" element={<Education />} />
+  </>
+);
+
 function App() {
   return (
     <HelmetProvider>
       <Router>
-        <ScrollToTop />
-        <div className="app-container flex flex-col min-h-screen">
-          <Navbar />
+        <LocaleProvider>
+          <ScrollToTop />
+          <div className="app-container flex flex-col min-h-screen">
+            <Navbar />
 
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/product" element={<Product />} />
-              <Route path="/education" element={<Education />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
+            <main className="flex-grow">
+              <Routes>
+                {/* Global Routes */}
+                <Route path="/">
+                  <GlobalRoutes />
+                </Route>
 
-          <Footer />
-        </div>
+                {/* Indian Routes */}
+                <Route path="/in">
+                  <GlobalRoutes />
+                </Route>
 
-        <style>{`
-          .min-h-screen { min-height: 100vh; }
-          .flex-grow { flex-grow: 1; }
-        `}</style>
+                {/* US Routes */}
+                <Route path="/us">
+                  <GlobalRoutes />
+                </Route>
+
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+
+            <Footer />
+          </div>
+
+          <style>{`
+            .min-h-screen { min-height: 100vh; }
+            .flex-grow { flex-grow: 1; }
+          `}</style>
+        </LocaleProvider>
       </Router>
     </HelmetProvider>
   );

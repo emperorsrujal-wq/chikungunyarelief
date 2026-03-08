@@ -1,6 +1,26 @@
 import { Check, ShoppingCart, Star } from 'lucide-react';
+import { useLocale } from '../context/LocaleContext';
 
 const ProductCard = () => {
+  const { currency, isIndia } = useLocale();
+
+  // Dynamic pricing based on region
+  const pricingData = {
+    starter: {
+      price: isIndia ? '3,499' : '49',
+    },
+    recovery: {
+      price: isIndia ? '2,999' : '39',
+      total: isIndia ? '8,997' : '117',
+      originalTotal: isIndia ? '10,497' : '147',
+      savings: isIndia ? '1,500' : '30',
+    },
+    longTerm: {
+      price: isIndia ? '2,499' : '29',
+      savings: isIndia ? '6,000' : '120',
+    }
+  };
+
   return (
     <section className="section" style={{ backgroundColor: '#f8fafc' }} id="shop">
       <div className="container">
@@ -18,8 +38,8 @@ const ProductCard = () => {
             <h3 className="package-title">Starter Package</h3>
             <p className="package-subtitle">1 Bottle (30 Day Supply)</p>
             <div className="price-tag">
-              <span className="currency">$</span>
-              <span className="amount">49</span>
+              <span className="currency">{currency}</span>
+              <span className="amount">{pricingData.starter.price}</span>
               <span className="period">/bottle</span>
             </div>
             <ul className="benefits-list text-left">
@@ -34,16 +54,16 @@ const ProductCard = () => {
 
           {/* 3 Bottle Package (Popular) */}
           <div className="card pricing-card popular text-center">
-            <div className="popular-badge">Most Popular • Save $30</div>
+            <div className="popular-badge">Most Popular • Save {currency}{pricingData.recovery.savings}</div>
             <h3 className="package-title">Recovery Package</h3>
             <p className="package-subtitle">3 Bottles (90 Day Supply)</p>
             <div className="price-tag">
-              <span className="currency">$</span>
-              <span className="amount">39</span>
+              <span className="currency">{currency}</span>
+              <span className="amount">{pricingData.recovery.price}</span>
               <span className="period">/bottle</span>
             </div>
-            <p style={{ textDecoration: 'line-through', color: '#94a3b8', fontSize: '0.9rem', marginBottom: '1rem' }}>Total: $147</p>
-            <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '1.5rem' }}>Total: $117</p>
+            <p style={{ textDecoration: 'line-through', color: '#94a3b8', fontSize: '0.9rem', marginBottom: '1rem' }}>Total: {currency}{pricingData.recovery.originalTotal}</p>
+            <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '1.5rem' }}>Total: {currency}{pricingData.recovery.total}</p>
 
             <ul className="benefits-list text-left">
               <li><Check size={18} color="var(--color-primary)" /> Deep inflammation relief</li>
@@ -57,12 +77,12 @@ const ProductCard = () => {
 
           {/* 6 Bottle Package */}
           <div className="card pricing-card text-center">
-            <div className="save-badge">Save $120</div>
+            <div className="save-badge">Save {currency}{pricingData.longTerm.savings}</div>
             <h3 className="package-title">Long-Term Relief</h3>
             <p className="package-subtitle">6 Bottles (180 Day Supply)</p>
             <div className="price-tag">
-              <span className="currency">$</span>
-              <span className="amount">29</span>
+              <span className="currency">{currency}</span>
+              <span className="amount">{pricingData.longTerm.price}</span>
               <span className="period">/bottle</span>
             </div>
             <ul className="benefits-list text-left">
