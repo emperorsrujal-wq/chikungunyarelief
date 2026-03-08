@@ -25,15 +25,6 @@ const ScrollToTop = () => {
   return null;
 };
 
-// Extracted routes to reuse across different locales
-const GlobalRoutes = () => (
-  <>
-    <Route index element={<Home />} />
-    <Route path="product" element={<Product />} />
-    <Route path="education" element={<Education />} />
-  </>
-);
-
 // Inner wrapping component so Providers can access Router context
 const AppContent = () => {
   return (
@@ -49,17 +40,23 @@ const AppContent = () => {
             <Routes>
               {/* Global Routes */}
               <Route path="/">
-                <GlobalRoutes />
+                <Route index element={<Home />} />
+                <Route path="product" element={<Product />} />
+                <Route path="education" element={<Education />} />
               </Route>
 
               {/* Indian Routes */}
               <Route path="/in">
-                <GlobalRoutes />
+                <Route index element={<Home />} />
+                <Route path="product" element={<Product />} />
+                <Route path="education" element={<Education />} />
               </Route>
 
               {/* US Routes */}
               <Route path="/us">
-                <GlobalRoutes />
+                <Route index element={<Home />} />
+                <Route path="product" element={<Product />} />
+                <Route path="education" element={<Education />} />
               </Route>
 
               <Route path="*" element={<NotFound />} />
